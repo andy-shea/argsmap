@@ -7,7 +7,8 @@ cache:
   - node_modules
 after_success: npm run coverage
 deploy:
-  on:
-    tags: true
+  provider: npm
   api_key:
     secure: IGDvGXRW8zanXbL3eAjxYRhK6KyOUyDzhFFYP6OxL/U3N9CD/3g5/0Wuu9Mc00bbSwmsWQplyTL5qumvh6HqqpBK3cPBIaybgMC/FfwLAQnVpEyZpvEvr1LLS/8x44HEKUtTEX0WTseaxlbTNvxaa6v8P7cfGEAXS2QLJ7Udwy5hz6AGuehYLobpHE90dNpG4xUBFT6635OD9Z3M8OuHnAvAB8zSoCKL2kR6v7Kz+oN1hWvlhkXdaBk3jJjXuFLh1RlTxoswoRCC59rHwOxClmpjPaHYTJl1VoKPnSIvwcXUoNBrOsRfjJVnXDOdkLyQGm2spok0UmwbuYw29HxHMSsCDK0jTPXy5XFZZNMb/0r2pLNq3G9WKzEkRpdBYr/aJGQKXnBBvA+ZhVvvboxQP4z4SQVijSDue5V6gWSDgCEHIz/OmWi0OIsAtoow1QgA/0z4hnB9qEfmlRSd9VE4yPkdzPeaPixaXXOqd63+LsHeDUizdcH4fRXgbxh6XAy5PLFIWGXoLOH9fz6LE8o4QlTPbaors7RESXjs9Qh3lx3R+p7wtlkvxgT0siEoJVARkezWvt91pNV47cH/GtqHPw1W6SvmJzC04qpQaVrP9YTmjjqN6FcsSs1Mc0QyRE9h30RMgX1RWgZ1EGDg5hD8hXOgkytPydoy1BwL35gvwnU=
+  on:
+    tags: true
