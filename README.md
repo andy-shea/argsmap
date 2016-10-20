@@ -7,7 +7,7 @@ A small helper to map function arguments to their parameter names
 
 ## Install
 
-```npm install argsmap --save```
+```yarn add argsmap```
 
 ## Example
 
