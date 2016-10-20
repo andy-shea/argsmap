@@ -1,0 +1,2 @@
+const  argsMap = require('./src');
+

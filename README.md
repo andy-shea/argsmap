@@ -11,8 +11,24 @@ A small helper to map function arguments to their parameter names
 ```
 import argsMap from 'argsmap';
 
-const map = argsMap(fn, args);
+function basic(foo, bar) {
+  const map = argsMap(basic, arguments);
+  console.log(map);
+  // {
+  //   foo: 'hello',
+  //   bar: 'world'
+  // }
+}
+basic('hello', 'world');
 ```
+
+## Limitations
+
+There is no support for default parameters. This library uses simple, naive regex parsing
+to extract parameter information which will break when provided with defaults.
+An implementation using [Acorn](https://github.com/ternjs/acorn) to tokenize the
+function before parameter extraction would provide a more robust implementation at the
+expense of performance.
 
 ## Licence
 
